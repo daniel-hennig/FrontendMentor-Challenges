@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="dist/style.css">
+  <title>Frontend Mentor | Room homepage</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <img src="dist/images/desktop-image-hero-1.jpg" alt="hero1" class="hero-img" id="hero-img">
+      <div class="angle_container2">
+        <a href="#" class="angle2 angle_left2" id="angle-left2"><img src="dist/images/icon-angle-left.svg" alt=""></a>
+        <a href="#" class="angle2 angle_right2" id="angle-right2"><img src="dist/images/icon-angle-right.svg" alt=""></a>
+      </div>
+      <div class="container">
+        <a class="hamburger" id="hamburger" href="#"><img id="hamburger-img" src="dist/images/icon-hamburger.svg" alt=""></a>
+        <a href="#" class="header__logo">
+          <img src="dist/images/logo.svg" alt="Room">
+        </a>
+        <div class="header__links">
+          <a href="#" class="active">home</a><a href="#">shop</a><a href="#">about</a><a href="#">contact</a>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </div>
+    <section class="hero_section">
+      <div class="hero_container">
+        <div class="h1_container">
+          <h1 id="h1">Discover innovative ways to decorate</h1>
+        </div>
+        <div class="p_container">
+          <p id="hero-p">We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.</p>
+        </div>
+        <div class="cta">
+          <a href="#">Shop now</a>
+          <a href="" class="shopping_arrow"><img src="dist/images/icon-arrow.svg" alt=""></a>
+        </div>
+        <div class="angle_container">
+          <a href="#" class="angle angle_left" id="angle-left"><img src="dist/images/icon-angle-left.svg" alt=""></a>
+          <a href="#" class="angle angle_right" id="angle-right"><img src="dist/images/icon-angle-right.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="section__about">
+    <div class="about_wrapper">
+      <img src="dist/images/image-about-dark.jpg" alt="image-about dark" class="about_dark">
+      <div class="text_container">
+        <h3>About our furniture</h3>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </div>
+        <img src="dist/images/image-about-light.jpg" alt="image-about-light" class="about_light">
+    </div>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Hennig</a>.
+  </div>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>

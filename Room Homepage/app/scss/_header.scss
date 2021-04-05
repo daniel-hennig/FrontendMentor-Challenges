@@ -1,0 +1,158 @@
+header {
+    display: flex;
+    width: 90rem;
+    max-width: 100%;
+}
+
+.header__wrapper {
+    width: 58.33%;
+    height: 0;
+
+    .angle_container2 {
+        display: none;
+    }
+}
+
+.hero-img {
+    width: 100%;
+    height: 33.4375rem;
+}
+
+.container {
+    display: inline-flex;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    .overlay {
+        opacity: .45;
+        position: fixed;
+        top: 6.875rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $black;
+    }
+}
+
+.header__links {
+    margin-left: 3.375rem;
+
+    a {
+        position: relative;
+        color: $white;
+        font-weight: $fw-m;
+        padding: .1875rem;
+        transition: font-weight 300ms ease-in-out;
+
+
+        &::before {
+            content: '';
+            background-color: $white;
+            font-weight: $fw-s;
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            right: 0;
+            height: .1875rem;
+            width: 50%;
+            opacity: 0;
+            transform: translateX(50%);
+            transition: opacity 300ms ease-in-out;
+        }
+        &:hover {
+            font-weight: $fw-l;
+            
+            &::before {
+              opacity: 1;
+            }
+        }
+    }
+
+    a:not(:first-child) {
+        margin-left: 2.125rem;
+    }
+}
+
+.hero_section {
+    height: 33.4375rem;
+    width: 41.66%;
+}
+
+.hero_container {
+    display: grid;
+    height: 33.4375rem;
+    position: relative;
+    grid-template-columns: 17.5fr 65fr 17.5fr;
+    grid-template-rows: 7.5625rem 5.4375rem 10.125rem 1.0625rem 9.25rem;
+
+    .h1_container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .p_container {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .cta {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+
+        a {
+           color: $veryDarkGray;
+           text-transform: uppercase;
+           letter-spacing: .75rem;
+        }
+   
+       .shopping_arrow {
+           padding-left: 2.75rem;
+       }
+
+       &:hover {
+        opacity: .75;
+       }
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: $fw-l;
+        color: #000;
+    }
+
+    p {
+        margin-top: 1.75rem;
+        margin-bottom: 2.1875rem;
+    }
+
+    .angle_container {
+        display: flex;
+    }
+    
+    .angle {
+        background-color: $black;
+        color: $white;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        transition: background-color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $veryDarkGray;
+        }
+    }
+    
+    .angle_left {
+        bottom: 0;
+        left: 0;
+    }
+    
+    .angle_right {
+        bottom: 0;
+        left: 5rem;
+    }
+}

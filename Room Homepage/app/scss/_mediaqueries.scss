@@ -1,0 +1,218 @@
+// Breakpoints
+
+@media screen and (max-width: 88.8125em) { // 1421px
+    .hero_container {
+        grid-template-rows: 6.5625rem 7.4375rem 11.125rem 1.0625rem 9.25rem;
+    }
+}
+
+@media screen and (max-width: 73.5625em) { // 1177px
+    .hero_container {
+        grid-template-rows: 3.5625rem 9.4375rem 12.125rem 1.0625rem 9.25rem;
+    }
+}
+
+@media screen and (max-width: 67.875em) { // 1086px
+    .hero_container {
+        grid-template-rows: 3.5625rem 9.4375rem 13.125rem 1.0625rem 9.25rem;
+    }
+}
+
+@media screen and (max-width: 65.875em) { // 1054px
+    .hero_container {
+        grid-template-rows: 2.5625rem 9.4375rem 14.125rem 1.0625rem 9.25rem;
+    }
+}
+
+@media screen and (max-width: 61.375em) { // 982px
+    header {
+        display: block;
+    }
+
+    .header__wrapper {
+        height: auto;
+        width: 100%;
+        position: relative;
+
+        .hero-img {
+            height: auto;
+            max-height: 35rem;
+        }
+
+        .angle_container2 {
+            display: flex;
+        }
+        
+        .angle2 {
+            background-color: $black;
+            color: $white;
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 5rem;
+            width: 5rem;
+            transition: background-color 300ms ease-in-out;
+    
+            &:hover {
+                background-color: $veryDarkGray;
+            }
+        }
+        
+        .angle_left2 {
+            bottom: .25rem;
+            right: 5rem;
+        }
+        
+        .angle_right2 {
+            bottom: .25rem;
+            right: 0;
+        }
+    }
+
+    .hero_section {
+        display: contents;
+        width: 100%;
+
+        .h1_container, .p_container, .cta {
+            padding-left: 2.1875rem;
+            padding-right: 2.1875rem;
+        }
+
+        .h1_container {
+            padding-top: 4.5625rem;
+        }
+        .cta {
+            padding-bottom: 4.5625rem;
+        }
+    }
+
+    .hero_container {
+        display: inherit;
+        height: 0;
+    }
+
+    .hero_container .angle_container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 58.4375em) { // 935px
+    .about_wrapper {
+        .about_light {
+            display: none;
+        }
+
+        .about_dark {
+            width: 50%;
+        }
+
+        .text_container {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 43.125em) { // 690px mobile styles
+    .container {
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 2.875rem;
+            left: 1.5rem;
+        }
+
+        .header__logo {
+            margin-left: -8%;
+            position: absolute;
+            top: 3rem;
+        }
+    }
+
+    .header__links {
+        display: none;
+    }
+
+    .hero_container {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .about_wrapper {
+        display: block;
+    
+        .about_dark {
+            width: 100%;
+        }
+
+        .text_container {
+            width: 100%;
+        }
+
+        .about_light {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 31.25em) { // 500px
+    .header__wrapper {
+        .angle2 {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+
+        .angle_left2 {
+            bottom: .25rem;
+            right: 3.5rem;
+        }
+
+        .angle_right2 {
+            bottom: .25rem;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 23.4375em) { // 375px
+    .hero-img {
+        content: url('images/mobile-image-hero-1.jpg');
+        max-height: 15.625rem;
+    }
+
+    .hero_container {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 22.5em) { // 360px
+    .header__links a:not(:first-child) {
+        margin-left: 1.125rem;
+    }
+
+    .show {
+        a {
+            display: inline-flex;
+            margin-bottom: .625rem;
+        }
+    }
+    .hero_container .cta .shopping_arrow {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 19.0625em) { // 305px
+    .header__links a:not(:first-child) {
+        margin-left: .825rem;
+    }
+}

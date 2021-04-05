@@ -1,0 +1,29 @@
+.hamburger {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.show {
+    display: block;
+    position: relative;
+    top: 3.1rem;
+    margin-right: 1.5625rem;
+    margin-left: 4.375rem;
+    color: $darkGray;
+
+    a {
+        color: $black;
+
+        &::before {
+            content: '';
+            display: none;
+        }
+    }
+}

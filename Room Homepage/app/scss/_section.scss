@@ -1,0 +1,29 @@
+.about_wrapper {
+    display: flex;
+
+    .text_container {
+        display: table;
+        padding: 4.375rem 3rem 4.375rem 3rem;
+        height: 16.625rem;
+        width: 40%;
+
+        h3 {
+            font-weight: $fw-l;
+            font-size: .8125rem;
+            text-transform: uppercase;
+            word-spacing: .25rem;
+            letter-spacing: .1875rem;
+            padding-bottom: 1.25rem;
+        }
+    }
+
+    .about_dark {
+        height: auto;
+        width: 30%;
+    }
+
+    .about_light {
+        height: auto;
+        width: 30%;
+    }
+}
