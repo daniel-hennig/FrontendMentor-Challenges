@@ -34,7 +34,7 @@ function changeText() {
     }
 }
 
-angleLeft.addEventListener('click', () => {
+angleLeft.addEventListener('click', (event) => {
     imgNumber--;
 
     if(imgNumber < 1) {
@@ -43,9 +43,10 @@ angleLeft.addEventListener('click', () => {
 
     changeText();
     heroImg.src = `dist/images/desktop-image-hero-${imgNumber}.jpg`;
+    event.preventDefault();
 });
 
-angleRight.addEventListener('click', () => {    
+angleRight.addEventListener('click', (event) => {    
     imgNumber++;
     
     if(imgNumber > 3) {
@@ -54,9 +55,10 @@ angleRight.addEventListener('click', () => {
 
     changeText();
     heroImg.src = `dist/images/desktop-image-hero-${imgNumber}.jpg`;
+    event.preventDefault();
 });
 
-angleLeft2.addEventListener('click', () => {
+angleLeft2.addEventListener('click', (event) => {
     if(window.innerWidth < 376) {    
         imgNumber--;
     
@@ -66,6 +68,7 @@ angleLeft2.addEventListener('click', () => {
     
         changeText();
         heroImg.style.content = `url("dist/images/mobile-image-hero-${imgNumber}.jpg")`;
+        event.preventDefault();
     } else {    
         imgNumber--;
     
@@ -75,10 +78,11 @@ angleLeft2.addEventListener('click', () => {
     
         changeText();
         heroImg.src = `dist/images/desktop-image-hero-${imgNumber}.jpg`;
+        event.preventDefault();
     }
 });
 
-angleRight2.addEventListener('click', () => {
+angleRight2.addEventListener('click', (event) => {
     if(window.innerWidth < 376) {        
         imgNumber++;
         
@@ -88,6 +92,7 @@ angleRight2.addEventListener('click', () => {
     
         changeText();
         heroImg.style.content = `url("dist/images/mobile-image-hero-${imgNumber}.jpg")`;
+        event.preventDefault();
     } else {        
         imgNumber++;
         
@@ -97,6 +102,7 @@ angleRight2.addEventListener('click', () => {
     
         changeText();
         heroImg.src = `dist/images/desktop-image-hero-${imgNumber}.jpg`;
+        event.preventDefault();
     }
 });
 
