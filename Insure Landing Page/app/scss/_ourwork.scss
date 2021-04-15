@@ -1,0 +1,76 @@
+.our_work {
+    background-color: #2d2640;
+    color: $veryLightGray;
+    position: relative;
+    text-align: center;
+    padding-bottom: 5.8125rem;
+    margin: 9rem 1.5625rem 8.75rem;
+
+    @include breakpoint-up(large) {
+        align-items: center;
+        display: flex;
+        height: 15.625rem;
+        padding: 0;
+        margin: 0 11.45833% 0;
+    }
+
+    &__grid {
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 7fr 31rem 28fr 14fr 7.5fr;
+            grid-template-rows: 1fr;
+        }
+    }
+
+    h2 {
+        font-size: 2.35rem;
+        font-weight: $fw-small;
+        line-height: .985;
+        padding: 4.875rem 2.6875rem 2.875rem;
+        position: relative;
+        z-index: 1;
+
+        @include breakpoint-up(large) {
+            font-size: 3.45rem;
+            text-align: left;            
+            padding: 0;
+            grid-column: 2/3;
+        }
+    }
+
+    .btn {
+        border: 2px solid $veryLightGray;
+        color: $veryLightGray;
+        letter-spacing: .0625rem;
+        padding: .6rem 1.4rem;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+
+        &:hover, &:focus {
+            border: 2px solid $veryDarkViolet;
+            background-color: $veryLightGray;
+            color: $veryDarkViolet;
+        }
+
+        @include breakpoint-up(large) {
+            align-self: center;
+            padding: .5rem 1.2rem;
+            white-space: nowrap;
+            grid-column: 4/5;
+            transition: .3s;
+        }
+    }
+
+    .m_pattern_work {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+
+        @include breakpoint-up(large) {
+            content: url('images/bg-pattern-how-we-work-desktop.svg');
+        }
+    }
+}

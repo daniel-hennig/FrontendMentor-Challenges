@@ -1,0 +1,98 @@
+.features {
+    margin-top: 8.75rem;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: 11.45833fr 77.0833fr 11.45833fr;
+        grid-template-rows: 305px 122px 345px 165px;
+        margin-top: 0;
+    }
+
+    &__content {
+        @include breakpoint-up(large) {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            position: relative;
+        }
+    }
+
+    h1::before {
+        border: 1px solid #D5C8D5;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-bottom: 2rem;
+        position: relative;
+        transform: translateX(-50%);
+        width: 40%;
+
+        @include breakpoint-up(large) {
+            left: 0;
+            transform: none;
+            margin-bottom: 3rem;
+            width: 10.55vw;
+        }
+    }
+
+    h1, h2 {
+        color: $veryDarkViolet;
+    }
+
+    h1 {
+        font-size: 2.92rem;
+        font-weight: $fw-small;
+        margin-bottom: 4.4rem;
+
+        @include breakpoint-up(large) {
+            font-size: 4.294152rem;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: left;
+        }
+    }
+    
+    h2 {
+        font-weight: $fw-small;
+        margin-top: 2.2rem;
+        margin-bottom: 1.5625rem;
+
+        @include breakpoint-up(large) {
+            font-size: 1.85rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    p {
+        color: $darkGrayishViolet;
+        font-size: 1.01rem;
+        line-height: 1.6;
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+        margin-bottom: 4rem;
+
+        @include breakpoint-up(large) {
+            font-size: 1.04rem;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        @include breakpoint-up(medium) {
+            display: flex;
+            
+            @include breakpoint-up(large) {
+                bottom: 0;
+                position: absolute;
+                column-gap: 2rem;
+            }
+        }
+    }
+
+    li {
+        @include breakpoint-up(large) {
+            text-align: left;
+        }
+    }
+}

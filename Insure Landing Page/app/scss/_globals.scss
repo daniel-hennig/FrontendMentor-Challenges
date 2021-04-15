@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    min-width: 23.3125rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Fonts
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+// Visibility
+.hidden {
+    display: none;
+}
+
+.invisible {
+    @include breakpoint-down(medium) {
+        visibility: hidden;
+        top: 0;
+        position: absolute;
+    }
+}
+  
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}

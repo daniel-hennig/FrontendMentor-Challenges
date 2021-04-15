@@ -1,0 +1,131 @@
+.footer {
+    background-color: #FAFAFA;
+    text-align: center;
+    padding-top: 5.5rem;
+    padding-bottom: 5.8125rem;
+    position: relative;
+
+    @include breakpoint-up(medium) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    @include breakpoint-up(large) {
+        margin-top: 9.375rem;
+        padding: 4.25rem 11.45833% 4.1875rem;
+    }
+
+    .logo img {
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .socials {
+        li {
+            display: contents;
+
+            a {
+                opacity: .75;
+
+                &:hover, &:focus {
+                    opacity: 1;
+                }
+
+                @include breakpoint-up(large) {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .socials::after {
+        border: 1px solid #D9D9D9;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-top: 2.5rem;
+        position: relative;
+        transform: translateX(-50%);
+        width: 80%;
+
+        @include breakpoint-up(large) {
+            top: 7.5625rem;
+            left: 0;
+            right: 0;
+            position: absolute;
+            transform: none;
+            margin-top: 0;
+            margin-left: 11.45833vw;
+            width: 77.08334vw;
+        }
+    }
+
+    h3 {
+        color: $darkGrayishViolet;
+        font-family: 'Karla', sans-serif;
+        font-size: .89rem;
+        font-weight: $fw-big;
+        letter-spacing: .125rem;
+        text-transform: uppercase;
+        margin-bottom: 2.25rem;
+        margin-top: 2.875rem;
+    }
+
+    li a {
+        color: $darkViolet;
+        color: $veryDarkViolet;
+        font-family: 'Karla', sans-serif;
+        font-size: .85rem;
+        font-weight: $fw-big;
+        text-transform: uppercase;
+        letter-spacing: .125rem;
+        opacity: .75;
+        position: relative;
+        z-index: 1;
+
+        &:hover, &:focus {
+            opacity: 1;
+        }
+
+        @include breakpoint-up(large) {
+            white-space: nowrap;
+        }
+    }
+
+    li:not(:last-child) {
+        margin-bottom: .9rem;
+    }
+
+    .m_pattern_footer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &__head {
+        display: block;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__text {
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: left;
+            justify-content: unset;
+
+            div {
+                margin-right: 15%;
+            }
+        }
+    }
+}

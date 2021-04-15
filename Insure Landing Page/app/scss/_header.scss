@@ -1,0 +1,431 @@
+.wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header {
+    .menu {
+        background-color: #fff;
+        display: block;
+        padding-top: 1.9375rem;
+        padding-bottom: 1.125rem;
+        position: fixed;
+        width: 100%;
+        -webkit-box-shadow: 0px -2px 5px 0px #000000; 
+        box-shadow: 0px -2px 5px 0px #000000;
+        z-index: 100;
+
+        @include breakpoint-up(large) {
+            box-shadow: none;
+            position: relative;
+            padding-bottom: 1.7rem;
+        }
+
+        &__open {
+            display: block;
+            height: 3.0625rem;
+            padding: 0;
+            margin-top: 1.9375rem;
+            position: relative;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .menu__logo {
+            margin-left: 1.5rem;
+
+            @include breakpoint-up(large) {
+                margin-left: 11.45833vw;
+            }
+        }
+
+        .menu__hamburger {
+            border: 2px solid $darkViolet;
+            float: right;
+            margin-right: 1.5rem;
+            padding: 8px;
+            position: relative;
+            top: -7px;
+
+            span {
+                background-color: $darkViolet;
+                display: block;
+                height: 2px;
+                width: 16px;
+                transition: all 300ms ease-in-out;
+                transform-origin: 1px 1px;
+
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+            }
+
+            &.open { // animate hamburger
+                > span:first-child {
+                    transform: rotate(45deg) translate(2px, -1px);
+                }
+
+                > span:nth-child(2) {
+                    opacity: 0;
+                }
+
+                > span:last-child {
+                    transform: rotate(-45deg) translate(1px, 2px);
+                }
+            }
+        }
+    }
+
+    .nav {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 5.01175rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-right: 11.45833vw;
+            z-index: 200;
+        }
+
+        .cta {
+            @include breakpoint-up(large) {
+                border: 1px solid $darkViolet;
+
+                &:hover {
+                    background: $darkViolet;
+                    color: $veryLightGray;
+                }
+            }
+        }
+
+        ul {
+            display: grid;
+
+            @include breakpoint-up(large) {
+                display: flex;
+            }
+        }
+
+        li {
+            padding-left: 6%;
+            padding-right: 6%;
+            font-weight: $fw-big;
+
+            @include breakpoint-up(large) {
+                padding-left: 0;
+                padding-right: 0;
+
+                &:not(:last-child) {
+                    opacity: .75;
+                }
+
+                &:hover:not(:last-child) {
+                    opacity: 1;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-top: 1rem;
+
+                @include breakpoint-up(large) {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        a {
+            color: $veryLightGray;
+            display: block;
+            font-size: 1.25rem;
+            letter-spacing: .0625rem;
+            text-transform: uppercase;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            position: relative;
+
+            @include breakpoint-up(large) {
+                color: $darkViolet;
+                font-size: 1rem;
+                padding-left: 1.875rem;
+                padding-right: 1.875rem;
+                transition: .3s;
+            }
+
+            span { // animation setup
+                display: block;
+                position: absolute;
+                background: $veryLightGray;
+
+                @include breakpoint-up(large) {
+                    display: none;
+                }
+            }
+
+            span:nth-child(1) { // animation
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 1px;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform .5s;
+            }
+
+            &:focus span:nth-child(1), &:hover span:nth-child(1) {
+                transform: scaleY(1);
+                transform-origin: bottom;
+                transition: transform .5s;
+            }
+
+            span:nth-child(2) {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .5s;
+            }
+
+            &:focus span:nth-child(2), &:hover span:nth-child(2) {
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform .5s;
+            }
+
+            span:nth-child(3) {
+                right: 0;
+                bottom: 0;
+                width: 1px;
+                height: 100%;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform .5s;
+                transition-delay: .5s;
+            }
+
+            &:focus span:nth-child(3), &:hover span:nth-child(3) {
+                transform: scaleY(1);
+                transform-origin: bottom;
+                transition: transform .5s;
+                transition-delay: .5s;
+            }
+
+            span:nth-child(4) {
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .5s;
+                transition-delay: .5s;
+            }
+
+            &:focus span:nth-child(4), &:hover span:nth-child(4) {
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform .5s;
+                transition-delay: .5s;
+            }
+        }
+
+        &__pattern {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-height: 50%;
+            width: 100%;
+            z-index: -1;
+
+            @include breakpoint-up(large) {
+                display: none;
+            }
+        }
+    }
+
+    .nav_overlay {
+        background-color: $veryDarkViolet;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 2rem;
+        position: fixed;
+        min-height: 100vh;
+        width: 100%;
+        top: 4.8125rem;
+        z-index: 2;
+    }
+}
+
+
+.hero {
+    top: 4.8125rem;
+    text-align: center;
+    position: relative;
+
+    @include breakpoint-up(large) {
+        top: unset;
+    }
+
+    &__img {
+        min-width: 100vw;
+
+        @include breakpoint-up(medium) {
+            min-width: unset;
+            width: 50%;
+        }
+
+        @include breakpoint-up(large) {
+            content: url('images/image-intro-desktop.jpg');
+            display: grid;
+            grid-row: 2/4;
+            grid-column: 3/4;
+            height: calc(45vw);
+            min-height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__container {
+        background-color: $darkViolet;
+        color: $veryLightGray;
+        padding-bottom: 5.8125rem;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-bottom: 0;
+        }
+
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 11.45833fr 39.5833fr 37.5fr 11.45833fr;
+            grid-template-rows: 105px 369px 126px;
+        }
+
+        .hero__text {
+            position: relative;
+
+            @include breakpoint-up(medium) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+            }
+
+            @include breakpoint-up(large) {
+                justify-content: unset;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                width: 100%;
+
+                h1::before {
+                    border: 1px solid #fafafa94;
+                    content: "";
+                    display: block;
+                    left: 0;
+                    margin-bottom: 3.45rem;
+                    position: relative;
+                    width: 10.55vw;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 2.92rem;
+            font-weight: $fw-small;
+            line-height: .985;
+            padding: 5.8rem 1.5625rem 1rem;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint-up(medium) {
+                padding: 0rem 1.5625rem 1rem;
+            }
+            @include breakpoint-up(large) {
+                font-size: 4.4092rem;
+                text-align: left;
+                padding: 0 2.1875rem 1rem 0;
+            }
+        }
+    
+        p {
+            font-size: 1.01rem;
+            line-height: 1.6;
+            padding: 0 1.5625rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint-up(large) {
+                letter-spacing: 1px;
+                line-height: 1.6rem;
+                padding: 0 2.1875rem 0 0;
+                text-align: left;
+            }
+        }
+
+        .btn {
+            border: 2px solid $veryLightGray;
+            color: $veryLightGray;
+            letter-spacing: .0625rem;
+            padding: .6rem 1.4rem;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+
+            &:focus, &:hover {
+                border: 2px solid $veryDarkViolet;
+                background-color: $veryLightGray;
+                color: $veryDarkViolet;
+            }
+
+            @include breakpoint-up(medium) {
+                align-self: center;
+            }
+
+            @include breakpoint-up(large) {
+                align-self: start;
+                padding: .5rem 1.2rem;
+                transition: .3s;
+            }
+        }
+
+        .m_pattern_left {
+            position: absolute;
+            top: -.25rem;
+            left: 0;
+            z-index: 0;
+
+            @include breakpoint-up(large) {
+                content: url('images/bg-pattern-intro-left-desktop.svg');
+                top: 19.5rem;
+                left: -12vw;
+                z-index: 0;
+            }
+        }
+
+        .m_pattern_right {
+            position: absolute;
+            bottom: -17.9rem;
+            right: 0;
+            z-index: 0;
+
+            @include breakpoint-up(medium) {
+                display: none;
+            }
+
+            @include breakpoint-up(large) {
+                content: url('images/bg-pattern-intro-right-desktop.svg');
+                display: initial;
+                position: absolute;
+                transform: translate(49vw, -15.4rem);
+            }
+        }
+    }
+}

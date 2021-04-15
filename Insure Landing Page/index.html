@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="menu" id="menu">
+        <a href="#"><img src="dist/images/logo.svg" alt="Insure" class="menu__logo"></a>
+        <a id="menu-hamburger" href="#" class="menu__hamburger hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <nav class="nav invisible" id="nav">
+        <ul>
+          <li><a href="#"><span></span><span></span><span></span><span></span>How we work</a></li>
+          <li><a href="#"><span></span><span></span><span></span><span></span>Blog</a></li>
+          <li><a href="#"><span></span><span></span><span></span><span></span>Account</a></li>
+          <li><a class="cta" href="#"><span></span><span></span><span></span><span></span>View plans</a></li>
+        </ul>
+        <img src="dist/images/bg-pattern-mobile-nav.svg" class="nav__pattern">
+      </nav>
+      <div class="hero" id="hero">
+        <div class="hero__container">
+          <img src="dist/images/image-intro-mobile.jpg" alt="intro" class="hero__img">
+          <div class="hero__text">
+            <h1>Humanizing your insurance.</h1>
+            <p>Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.</p>
+            <a href="#" class="btn">View plans</a>
+            <img src="dist/images/bg-pattern-intro-left-mobile.svg" class="m_pattern_left">
+            <img src="dist/images/bg-pattern-intro-right-mobile.svg" class="m_pattern_right">
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="features" id="features">
+      <h1>We’re different</h1>
+      <div class="features__content">
+        <ul>
+          <li>
+            <img src="dist/images/icon-snappy-process.svg" alt="process">
+            <h2>Snappy Process</h2>
+            <p>Our application process can be completed in minutes, not hours. Don’t get 
+              stuck filling in tedious forms.</p>
+          </li>
+          <li>
+            <img src="dist/images/icon-affordable-prices.svg" alt="prices">
+            <h2>Affordable Prices</h2>
+            <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+              but we still offer the best coverage possible.</p>
+          </li>
+          <li>
+            <img src="dist/images/icon-people-first.svg" alt="people">
+            <h2>People First</h2>
+            <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              sure you’re covered when you need it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="our_work" id="our-work">
+      <div class="our_work__grid">
+        <h2>Find out more about how we work</h2>
+        <a href="#" class="btn">How we work</a>
+        <img src="dist/images/bg-pattern-how-we-work-mobile.svg" class="m_pattern_work">
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="footer__head">
+        <a href="#" class="logo"><img src="dist/images/logo.svg" alt="Insure"></a>
+        <div class="socials">
+          <ul>
+            <li><a class="social_icon" href="#"><img src="dist/images/icon-facebook.svg" alt="Facebook"></a></li>
+            <li><a class="social_icon" href="#"><img src="dist/images/icon-twitter.svg" alt="Twitter"></a></li>
+            <li><a class="social_icon" href="#"><img src="dist/images/icon-pinterest.svg" alt="Pinterest"></a></li>
+            <li><a class="social_icon" href="#"><img src="dist/images/icon-instagram.svg" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__text">
+        <div>
+          <h3>Our company</h3>
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Why Insure?</a></li>
+            <li><a href="#">Check Price</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Help me</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Live chat</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Others</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <img src="dist/images/bg-pattern-footer-mobile.svg" class="m_pattern_footer">
+    </footer>
+  </div>
+  
+  <div class="attribution" id="attribute">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/daniel-hennig">Daniel Hennig</a>.
+  </div>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>
