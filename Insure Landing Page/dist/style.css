@@ -481,6 +481,7 @@ header .nav_overlay {
 }
 
 .hero__img {
+  content: url("images/image-intro-mobile.jpg");
   min-width: 100vw;
 }
 
@@ -659,6 +660,7 @@ header .nav_overlay {
 }
 
 .hero__container .m_pattern_left {
+  content: url("images/bg-pattern-intro-left-mobile.svg");
   position: absolute;
   top: -.25rem;
   left: 0;
@@ -675,6 +677,7 @@ header .nav_overlay {
 }
 
 .hero__container .m_pattern_right {
+  content: url("images/bg-pattern-intro-right-mobile.svg");
   position: absolute;
   bottom: -17.9rem;
   right: 0;
@@ -910,6 +913,7 @@ header .nav_overlay {
 }
 
 .our_work .m_pattern_work {
+  content: url("images/bg-pattern-how-we-work-mobile.svg");
   height: 100%;
   position: absolute;
   top: 0;

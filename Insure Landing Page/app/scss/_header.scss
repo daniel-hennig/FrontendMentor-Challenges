@@ -273,6 +273,7 @@ header {
     }
 
     &__img {
+        content: url('images/image-intro-mobile.jpg');
         min-width: 100vw;
 
         @include breakpoint-up(medium) {
@@ -397,6 +398,7 @@ header {
         }
 
         .m_pattern_left {
+            content: url('images/bg-pattern-intro-left-mobile.svg');
             position: absolute;
             top: -.25rem;
             left: 0;
@@ -411,6 +413,7 @@ header {
         }
 
         .m_pattern_right {
+            content: url('images/bg-pattern-intro-right-mobile.svg');
             position: absolute;
             bottom: -17.9rem;
             right: 0;
