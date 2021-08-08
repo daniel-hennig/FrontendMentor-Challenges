@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("/fonts/lexend deca/LexendDeca-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+/*================ Globals ================*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: Inter;
+}
+
+.card-component {
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card-image {
+    content: url("images/image-header-mobile.jpg");
+}
+
+
+/*================ Typographie ================*/
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-header {
+    font-size: 27px;
+}
+
+.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-description {
+    line-height: 25px;
+}
+
+.card-overview p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: Lexend Deca;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+/*================ Spacing ================*/
+.card-hero, .card-overview {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.card-container {
+    padding: 88px 24px;
+}
+
+.card-hero {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.card-header {
+    margin-bottom: 17px;
+}
+
+.card-overview {
+    margin-bottom: 5px;
+}
+
+.card-overview ul li {
+    margin-bottom: 35px;
+}
+
+/*================ Sizing ================*/
+.card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*================ Styling ================*/
+.card-component {
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    overflow: hidden;
+}
+
+.card-overview ul {
+    list-style: none;
+}
+
+.overlay {
+    font-size: 0;
+    position: relative;
+}
+.overlay::after {
+    background-color: hsl(277, 64%, 38%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 10;
+}
+
+
+/*================ Media Queries ================*/
+@media (min-width: 975px) {
+    .card-container {
+        padding: 22vh 11.388vw;
+    }
+
+    .card-component {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card-hero, .card-overview {
+        padding-left: min(72px, 12%);
+        /* padding-right: min(72px, 12%); */
+        padding-right: min(111px, 20%);
+    }
+
+    .card-header, .card-description {
+        text-align: left;
+    }
+
+    .card-hero {
+        margin-top: 70px;
+        margin-bottom: 75px;
+    }
+
+    .card-header {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .card-overview ul {
+        display: flex;
+        text-align: left;
+    }
+
+    .card-overview ul li {
+        margin-right: min(65px, 15%);
+    }    
+
+    .card-overview p {
+        margin-top: 10px;
+    }
+
+    .image-section, .text-section {
+        width: 50%;
+    }
+
+    .card-image {
+        content: url("images/image-header-desktop.jpg");
+        display: initial;
+        min-height: 100%;
+    }
+
+    .overlay {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .image-section, .text-section {
+        width: auto;
+    }
+}
