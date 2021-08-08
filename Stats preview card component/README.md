@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![mockuper](https://user-images.githubusercontent.com/78707309/128644660-6a91a132-2af3-45f4-98a2-a9cbf4f98289.png)
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
-- Live Site URL: [Preview Live](https://stats-preview-card-component-by-danielhennig.netlify.app/)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/html5-css3-mobile-first-dmpiArQWI)
+- Live Site URL: [Go Live](https://stats-preview-card-component-by-danielhennig.netlify.app/)
 
 ## My process
 
