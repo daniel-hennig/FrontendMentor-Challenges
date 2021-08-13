@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor - Order summary component solution
 
 This is a solution to the [Order summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-ehy-i0wZZ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![mockuper](https://user-images.githubusercontent.com/78707309/129411647-dc978416-d4bb-4d62-af5d-deecced15d54.png)
 
 ### Links
 
 - Solution URL: [Preview Solution](https://your-solution-url.com)
-- Live Site URL: [Preview Live]()
+- Live Site URL: [Preview Live](https://order-summary-component-by-danielhennig.netlify.app/)
 
 ## My process
 
