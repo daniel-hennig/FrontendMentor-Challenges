@@ -1,0 +1,158 @@
+/* =============== Globals =============== */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DDE4FE;
+    font-family: 'Red Hat Display', sans-serif;
+
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+.bg-pattern {
+    position: absolute;
+    top: 0;
+}
+
+/* =============== Container =============== */
+.order-sum-container {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 87.2%;
+    max-width: 450px;
+    height: auto;
+    max-height: 679px;
+    -webkit-box-shadow: 0px 11px 26px 1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 11px 26px 1px rgba(0,0,0,0.1);
+}
+
+.card-content {
+    background-color: #fff;
+}
+
+/* =============== Hero =============== */
+.hero-title, .product-model {
+    color: hsl(223, 47%, 23%);
+}
+
+.bg-pattern {
+    content: url("images/pattern-background-mobile.svg");
+}
+
+.hero-image {
+    margin-bottom: -4px;
+    width: 100%;
+}
+
+.hero-title {
+    font-weight: 900;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+
+.hero-description {
+    padding: 0 30px;
+}
+
+/* =============== Pricing =============== */
+.pricing {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin: 28px 24px 24px 24px;
+    padding: 18px 16px;
+}
+
+.music-icon {
+    margin-right: 19px;
+}
+
+.product-model {
+    font-size: 16px;
+}
+
+.change-link {
+    color: hsl(245, 75%, 52%);
+    margin-left: auto;
+}
+
+.change-link:hover {
+    color: hsla(245, 75%, 52%, 0.75);
+}
+
+/* =============== Checkout =============== */
+.checkout {
+    padding-top: 24px;
+    padding-bottom: 37px;
+}
+
+.submit-btn {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 65px;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.75);
+}
+
+.cancel-link {
+    color: hsl(224, 23%, 55%);
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 48px;
+    text-decoration: none;
+}
+
+.cancel-link:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/* =============== Media Queries =============== */
+@media (min-width: 525px) {
+    .bg-pattern {
+        content: url("images/pattern-background-desktop.svg");
+    }
+
+    .hero-description {
+        padding: 0 42px;
+    }    
+
+    .pricing {
+        margin: 28px 48px 24px 48px;
+    }
+
+    .checkout {
+        padding-top: 0;
+    }
+
+    .submit-btn {
+        margin-left: 48px;
+        margin-right: 48px;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
