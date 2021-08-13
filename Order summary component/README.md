@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
-- Live Site URL: [Preview Live](https://order-summary-component-by-danielhennig.netlify.app/)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/html5-css3-mobile-first-SQKhv3B0s)
+- Live Site URL: [Go Live](https://order-summary-component-by-danielhennig.netlify.app/)
 
 ## My process
 
