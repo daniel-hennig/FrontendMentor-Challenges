@@ -12,7 +12,6 @@ html {
 body {
     background-color: #DDE4FE;
     font-family: 'Red Hat Display', sans-serif;
-
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -132,6 +131,11 @@ p {
 
 /* =============== Media Queries =============== */
 @media (min-width: 525px) {
+    body {
+        margin-top: 102px;
+        margin-bottom: 102px;    
+    }
+
     .bg-pattern {
         content: url("images/pattern-background-desktop.svg");
     }
