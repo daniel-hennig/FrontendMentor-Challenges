@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive pricing component solution
 
+![desktop-preview](https://user-images.githubusercontent.com/78707309/130347186-aca2232e-5b48-4493-beae-e67a6f868ea6.jpg)
+
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
@@ -25,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![mockuper](https://user-images.githubusercontent.com/78707309/130347174-7046986a-9e6c-46c2-8cb5-446ad392629b.png)
 
 ### Links
 
