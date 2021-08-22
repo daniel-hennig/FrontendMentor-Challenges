@@ -1,0 +1,39 @@
+$breakpoint-up: ("medium": "39.6875em"); // 635px
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoint-up, $size)) {
+        @content;
+    }
+}
+
+@media (min-width: 39.6875em) {
+    .card-container {
+        .pricing {
+            .price-container {
+                display: grid;
+                grid-template-areas:
+                    "views price"
+                    "slider slider";
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 80%;
+
+                .views {
+                    grid-area: views;
+                }
+
+                .slider-container {
+                    grid-area: slider;
+
+                    #rangeSlider {
+                        width: 100% !important;
+                    }
+                }
+
+                .totalPrice {
+                    grid-area: price;
+                }
+            }
+        }
+    }
+}

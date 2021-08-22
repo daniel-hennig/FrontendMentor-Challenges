@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">  
+  <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <div class="bg-img-container">
+      <img class="bg-img" src="images/bg-pattern.svg" alt="background pattern">
+    </div>
+    <header class="position-relative">
+      <img class="position-absolute top-50 start-50 translate-middle" src="images/pattern-circles.svg" alt="circle pattern">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required.</2>
+    </header>
+  </main>
+
+  <section class="card-section d-flex justify-content-center align-items-center">
+    <div class="card-container">
+      <section class="pricing">
+        <div class="price-container">
+          <p class="views d-flex align-items-center justify-content-center"><span id="page-views"></span> Pageviews</p>
+
+          <div class="slider-container">
+            <div class="d-flex justify-content-center">
+              <form class="w-100">
+                <input type="range" class="custom-range" list="tickmarks" id="rangeSlider" min="0" max="4">
+                <datalist id="tickmarks">
+                  <option value="10K">
+                  <option value="50K">
+                  <option value="100K">
+                  <option value="500K">
+                  <option value="1M">
+                </datalist>
+              </form>
+            </div>
+          </div>
+
+          <p class="totalPrice d-flex justify-content-center align-items-center" id="period"><span>$</span><span id="price"></span><span>.00</span>/ month</p>
+        </div>
+
+        <div class="discount-container d-flex justify-content-center align-items-center">
+          <p>Monthly Billing</p>
+          <div class="toggle position-relative d-flex align-items-center" id="toggler"><div class="toggle-circle position-absolute" id="toggler-circle"></div></div>
+          <p>Yearly Billing</p>
+          <span class="discount-percentages dp-mobile">-25%</span>
+          <span class="discount-percentages dp-desktop">25% discount</span>
+        </div>
+      </section>
+
+      <span class="break-line d-block"></span>
+
+      <footer class="footer">
+        <section class="features">
+          <div class="feature d-flex justify-content-center align-items-center">
+            <img src="images/icon-check.svg" alt="check mark">
+            <p>Unlimited websites</p>
+          </div>
+          <div class="feature d-flex justify-content-center align-items-center">
+            <img src="images/icon-check.svg" alt="check mark">
+            <p>100% data ownership</p>
+          </div>
+          <div class="feature d-flex justify-content-center align-items-center">
+            <img src="images/icon-check.svg" alt="check mark">
+            <p>Email reports</p>
+          </div>
+        </section>
+        <div>
+          <button class="cta-btn btn">Start my trial</button>
+        </div>
+      </footer>
+    </div>
+  </section>
+  
+  <script src="app/script.js"></script>
+</body>
+</html>
