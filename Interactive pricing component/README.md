@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/html5-scss-bootstrap-vanilllajs-mobilefirst-kZ6WHQ4bg)
 - Live Site URL: [Preview Live](https://interactive-pricing-component-by-danielhennig.netlify.app/)
 
 ## My process
