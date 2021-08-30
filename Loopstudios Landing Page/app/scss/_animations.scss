@@ -1,0 +1,63 @@
+@keyframes slideLeft {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        visibility: hidden;
+        left: -100%;
+    }
+
+    1% {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+        left: 25px;
+    }
+}
+
+.slideLeft {
+    animation: slideLeft 200ms ease-in-out forwards;
+}
+
+.slideRight {
+    animation: slideRight 200ms ease-in-out forwards;
+}
+
+.slideIn {
+    animation: slideIn 200ms ease-in-out forwards;
+}
+
+#about {
+    animation-delay: 200ms;
+}
+#careers {
+    animation-delay: 300ms;
+}
+#events {
+    animation-delay: 400ms;
+}
+#products {
+    animation-delay: 500ms;
+}
+#support {
+    animation-delay: 600ms;
+}

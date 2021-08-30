@@ -1,0 +1,74 @@
+$breakpoint-up: ("medium": "550px", "large": "800px", "xlarge": "1745px");
+$breakpoint-down: ("medium": "549px");
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoint-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoint-down, $size)) {
+        @content;
+    }
+}
+
+
+// media query for grid-template-areas
+@media (min-width: 800px) {
+    .creations {
+        display: grid;
+        grid-template-rows: 0fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "a c"
+            "b b"
+        ;
+
+        h2 {
+            grid-area: a;
+        }
+
+        .image-container {
+            grid-area: b;
+        }
+
+        .button-container {
+            grid-area: c;
+            justify-self: end;
+        }
+    }
+
+    footer {
+        nav {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "a c"
+                "b d"
+            ;
+            row-gap: 22px;
+
+            figure {
+                grid-area: a;
+                text-align: left;
+            }
+
+            .links {
+                display: flex;
+                grid-area: b;
+            }
+
+            .icons {
+                grid-area: c;
+                justify-self: end;
+            }
+
+            small {
+                grid-area: d;
+                justify-self: end;
+            }
+        }
+    }
+}
