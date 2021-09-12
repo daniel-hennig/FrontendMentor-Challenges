@@ -1,0 +1,123 @@
+@keyframes fadeIn {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+    }
+
+    to {
+        opacity: .95;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: .95;
+        visibility: visible;
+    }
+
+    99% {
+        opacity: 0;
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes firstSpanAnima {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    to {
+        transform-origin: 10px 0px;
+        transform: translateY(6px) rotate(45deg);
+    }
+}
+
+@keyframes reverseFirstSpanAnima {
+    from {
+        transform-origin: 10px 0px;
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    50% {
+        transform-origin: 10px 0px;
+        transform: translateY(6px) rotate(0deg);
+    }
+
+    to {
+        transform-origin: 1px 1px;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes thirdSpanAnima {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    to {
+        transform-origin: 9px 3px;
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+@keyframes reverseThirdSpanAnima {
+    from {
+        transform-origin: 9px 3px;
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    50% {
+        transform-origin: 9px 3px;
+        transform: translateY(-6px) rotate(0deg);
+    }
+
+    to {
+        transform-origin: 1px 1px;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.fade-in {
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut .5s ease-in-out forwards;
+}
+
+.first-span-anima {
+    background-color: #fff !important;
+    animation: firstSpanAnima 400ms ease-in-out forwards;
+}
+
+.third-span-anima {
+    background-color: #fff !important;
+    animation: thirdSpanAnima 400ms ease-in-out forwards;
+}
+
+.reverse-first-span-anima {
+    background-color: $clr-veryDarkBlue !important;
+    animation: reverseFirstSpanAnima 500ms ease-in-out forwards;
+}
+
+.reverse-third-span-anima {
+    background-color: $clr-veryDarkBlue !important;
+    animation: reverseThirdSpanAnima 500ms ease-in-out forwards;
+}
