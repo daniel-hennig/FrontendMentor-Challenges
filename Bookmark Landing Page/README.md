@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/this-might-be-a-masterpiece-must-see-on-mobile-tablet-and-laptop--1Dysx-39)
 - Live Site URL: [See Live-Version](https://bookmarklp-by-danielhennig.netlify.app/)
 
 ## My process
