@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 2021-09-12 at 15-21-04 Frontend Mentor Bookmark landing page](https://user-images.githubusercontent.com/78707309/132989255-c9fdaa24-5a81-418f-b224-9e5c2df7b61f.png)
+![Screenshot 2021-09-14 at 10-46-30 Frontend Mentor Bookmark landing page](https://user-images.githubusercontent.com/78707309/133227097-55747818-bb1d-4f54-98b1-fa0f79ca59de.png)
 
 ### Links
 
