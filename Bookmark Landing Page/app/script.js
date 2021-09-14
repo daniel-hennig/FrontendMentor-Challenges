@@ -23,13 +23,9 @@ hamburger.addEventListener("click", (e) => {
         hamburger.children[2].classList.add("reverse-third-span-anima");
         hamburger.children[1].style.opacity = 1;
 
-        navLogoImg.children[0].attributes.fill.nodeValue = 'initial';
-        navLogoImg.children[1].children[0].attributes.fill.nodeValue = "#5267df"
-        navLogoImg.children[1].children[1].attributes.fill.nodeValue = "#fff"
-        
-        navBarItem.forEach(item => {
-            item.style.opacity = "0";
-        });
+        navLogoImg.children[0].classList.remove("logo-change");
+        navLogoImg.children[1].children[0].classList.remove("logo-change");
+        navLogoImg.children[1].children[1].classList.remove("logo-change");
         
         body.style.overflow = "initial";
 
@@ -54,9 +50,9 @@ hamburger.addEventListener("click", (e) => {
         hamburger.children[0].classList.add("first-span-anima");
         hamburger.children[2].classList.add("third-span-anima");
 
-        navLogoImg.children[0].attributes.fill.nodeValue = '#fff';
-        navLogoImg.children[1].children[0].attributes.fill.nodeValue = "#fff"
-        navLogoImg.children[1].children[1].attributes.fill.nodeValue = "#30354F"
+        navLogoImg.children[0].classList.add("logo-change");
+        navLogoImg.children[1].children[0].classList.add("logo-change");
+        navLogoImg.children[1].children[1].classList.add("logo-change");
 
         navBarItem.forEach(item => {
             item.style.opacity = "1";

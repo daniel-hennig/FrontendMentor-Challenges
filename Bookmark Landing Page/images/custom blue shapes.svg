@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="515" height="352" viewBox="0 0 515 352">
+  <g id="Rechteck_1" data-name="Rechteck 1" fill="#4a5cc8" stroke="#5768c2" stroke-width="1">
+    <path d="M176,0H515a0,0,0,0,1,0,0V352a0,0,0,0,1,0,0H176A176,176,0,0,1,0,176v0A176,176,0,0,1,176,0Z" stroke="none"/>
+    <path d="M176,.5H514.011a.489.489,0,0,1,.489.489V351.011a.489.489,0,0,1-.489.489H176A175.5,175.5,0,0,1,.5,176v0A175.5,175.5,0,0,1,176,.5Z" fill="none"/>
+  </g>
+</svg>
