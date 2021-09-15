@@ -541,7 +541,7 @@ main {
                     position: relative;
 
                     @include breakpoint-up(medium) {
-                        padding: 20px 0 31px;
+                        padding: 0;
                         width: 26vw;
                     }    
 
@@ -594,6 +594,10 @@ main {
 
                         @include breakpoint-up(medium) {
                             font-size: 1.0625rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px 0 31px;
                         }            
 
                         @include breakpoint-up(xxlarge) {
@@ -615,7 +619,7 @@ main {
                             transform: translateX(-50%);   
                             
                             @include breakpoint-up(medium) {
-                                bottom: -31px;
+                                bottom: 0;
                                 width: 26vw;
                             }            
 
