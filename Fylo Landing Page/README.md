@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/html5-scss-level-up-clean-and-efficient-code-fQiDpbctm)
-- Live Site URL: [See Live-Version](https://app.netlify.com/sites/fylo-by-danielhennig)
+- Live Site URL: [See Live-Version](https://fylo-by-danielhennig.netlify.app)
 
 ## My process
 
