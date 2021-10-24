@@ -1,0 +1,53 @@
+/* ====================== Colors ====================== */
+
+// Primary
+$clr-veryDarkBlue: hsl(243, 87%, 12%);
+$clr-desaturatedBlue: hsl(238, 22%, 44%);
+
+// Accent
+$clr-brightBlue: hsl(224, 93%, 58%);
+$clr-moderateCyan: hsl(170, 45%, 43%);
+
+// Neutral
+$clr-lLightGrayishBlue: hsl(240, 75%, 98%);
+$clr-lightGray: hsl(0, 0%, 75%);
+
+/* ====================== Typography ====================== */
+
+@font-face {
+    src: url('/Fonts/raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('/Fonts/raleway/static/Raleway-Bold.ttf') format('truetype');
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('/Fonts/open\ sans/static/OpenSans/OpenSans-Regular.ttf');
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('/Fonts/open\ sans/static/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+// Font Family - Headings, Call-to-actions, Header Navigation
+$ff-raleway: Raleway;
+
+// Font Family - Body
+$ff-openSans: 'Open Sans';
+
+// Font Weights
+$fw-regular: 400;
+$fw-bold: 700;

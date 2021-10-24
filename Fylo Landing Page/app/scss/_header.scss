@@ -1,0 +1,52 @@
+header {
+    padding: 1.5rem 6.4vw 0;
+
+    @include breakpoint-up(large) {
+        padding: 4.0625rem 5.55555vw 0;
+    }
+
+    @include breakpoint-up(extralarge) {
+        padding: 4.0625rem 9vw 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__logo {
+            height: 1.5rem; // 24px
+            width: 5rem; // 80px
+
+            @include breakpoint-up(large) {
+                height: auto;
+                width: clamp(5rem, calc(9vw + 0.0625rem), 10.375rem);
+            }
+
+            @include breakpoint-up(larger) {
+                height: auto;
+                width: clamp(5rem, calc(12vw + 0.0625rem), 10.375rem); // 166px max.
+            }
+        }
+
+        .nav__links-main {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            @include breakpoint-up(large) {
+                gap: 58px;                
+            }
+
+            li {
+                a {
+                    color: $clr-veryDarkBlue;
+
+                    &:hover, &:focus-visible {
+                        color: $clr-brightBlue;
+                    }
+                }
+            }
+        }
+    }
+}
