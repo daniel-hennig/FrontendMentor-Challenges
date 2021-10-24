@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![mockuper (1)](https://user-images.githubusercontent.com/78707309/138612088-fc566168-2de5-41a8-8b55-f9f7616ac9a3.png)
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/html5-scss-level-up-clean-and-efficient-code-fQiDpbctm)
 - Live Site URL: [See Live-Version](https://app.netlify.com/sites/fylo-by-danielhennig)
 
 ## My process
