@@ -359,6 +359,11 @@ input {
   border: 1px solid #3065f8;
 }
 
+.form1-input:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
+}
+
 @media (min-width: 37.5em) {
   .form1-input {
     height: calc(2.8125rem - 26px);
@@ -397,6 +402,11 @@ input {
   border: 1px solid #3065f8;
 }
 
+.form2-input:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
+}
+
 @media (min-width: 37.5em) {
   .form2-input {
     height: calc(3rem - 20px);
@@ -419,6 +429,7 @@ button {
   background: #3065f8;
   border: 1px solid #3065f8;
   color: #fff;
+  cursor: pointer;
 }
 
 button:hover, button:focus-visible {
@@ -427,7 +438,7 @@ button:hover, button:focus-visible {
 }
 
 button:focus-visible {
-  outline: 2px dashed black;
+  outline: 2px dashed #ef4877;
   outline-offset: 3px;
 }
 
@@ -527,6 +538,11 @@ header nav .header__logo {
   width: 5rem;
 }
 
+header nav .header__logo:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
+}
+
 @media (min-width: 56.25em) {
   header nav .header__logo {
     height: auto;
@@ -563,6 +579,11 @@ header nav .nav__links-main li a {
 
 header nav .nav__links-main li a:hover, header nav .nav__links-main li a:focus-visible {
   color: #3065f8;
+}
+
+header nav .nav__links-main li a:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
 }
 
 main {
@@ -864,6 +885,11 @@ main .productive-section .col-2 .features__link a {
           align-items: center;
   gap: 8px;
   position: relative;
+}
+
+main .productive-section .col-2 .features__link a:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
 }
 
 @media (min-width: 56.25em) {
@@ -1174,6 +1200,11 @@ footer .footer__logo {
   margin-bottom: 32px;
 }
 
+footer .footer__logo:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
+}
+
 @media (min-width: 56.25em) {
   footer .footer__logo {
     height: 2.4375rem;
@@ -1258,7 +1289,7 @@ footer .footer__columns .col-1 div {
   gap: 16px;
 }
 
-footer .footer__columns nav {
+footer .footer__columns nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,7 +1301,7 @@ footer .footer__columns nav {
 }
 
 @media (min-width: 56.25em) {
-  footer .footer__columns nav {
+  footer .footer__columns nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1280,7 +1311,7 @@ footer .footer__columns nav {
 }
 
 @media (min-width: 75em) {
-  footer .footer__columns nav {
+  footer .footer__columns nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1289,7 +1320,7 @@ footer .footer__columns nav {
   }
 }
 
-footer .footer__columns nav .col-2 ul {
+footer .footer__columns nav ul .col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1300,7 +1331,7 @@ footer .footer__columns nav .col-2 ul {
   gap: 16px;
 }
 
-footer .footer__columns nav .col-3 ul {
+footer .footer__columns nav ul .col-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1354,5 +1385,10 @@ footer .footer__columns .col-4 li a {
 
 footer .footer__columns .col-4 li a:hover, footer .footer__columns .col-4 li a:focus-visible {
   border: 0.79591px solid #3065f8;
+}
+
+a:focus-visible {
+  outline: 2px dashed #ef4877;
+  outline-offset: 3px;
 }
 /*# sourceMappingURL=style.css.map */

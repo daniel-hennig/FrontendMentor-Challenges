@@ -220,6 +220,11 @@ main {
                         gap: 8px;
                         position: relative;
 
+                        &:focus-visible {
+                            outline: 2px dashed hsla(343, 84%, 61%, 1);
+                            outline-offset: 3px;
+                        }
+
                         @include breakpoint-up(large) {
                             gap: 6px;
                         }

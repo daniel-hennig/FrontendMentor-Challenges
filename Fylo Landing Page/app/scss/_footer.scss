@@ -20,6 +20,11 @@ footer {
         width: 6.5625rem; // 105px
         margin-bottom: 32px;
 
+        &:focus-visible {
+            outline: 2px dashed hsla(343, 84%, 61%, 1);
+            outline-offset: 3px;
+        }
+
         @include breakpoint-up(large) {
             height: 2.4375rem; // 39px
             width: 8.4375rem; // 135px
@@ -81,7 +86,7 @@ footer {
             }
         }
     
-        nav {
+        nav ul {
             display: flex;
             flex-direction: column;
             gap: 32px;
@@ -97,19 +102,15 @@ footer {
             }    
 
             .col-2 {
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-                }
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
             }
     
             .col-3 {
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-                }
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
             }
         }
     
@@ -145,5 +146,12 @@ footer {
                 }
             }    
         }
+    }
+}
+
+a {
+    &:focus-visible {
+        outline: 2px dashed hsla(343, 84%, 61%, 1);
+        outline-offset: 3px;
     }
 }

@@ -293,6 +293,11 @@ input {
         border: 1px solid $clr-brightBlue;
     }
 
+    &:focus-visible {
+        outline: 2px dashed hsla(343, 84%, 61%, 1);
+        outline-offset: 3px;
+    }
+
     @include breakpoint-up(medium) {
         height: calc(2.8125rem - 26px); // 45px
     }
@@ -322,6 +327,11 @@ input {
         border: 1px solid $clr-brightBlue;
     }
 
+    &:focus-visible {
+        outline: 2px dashed hsla(343, 84%, 61%, 1);
+        outline-offset: 3px;
+    }
+
     @include breakpoint-up(medium) {
         height: calc(3rem - 20px); // 48px
     }
@@ -340,6 +350,7 @@ button {
     background: $clr-brightBlue;
     border: 1px solid $clr-brightBlue;
     color: #fff;
+    cursor: pointer;
 
     &:hover, &:focus-visible {
         background-color: hsla(221, 100%, 71%, 1);
@@ -347,7 +358,7 @@ button {
     }
 
     &:focus-visible {
-        outline: 2px dashed black;
+        outline: 2px dashed hsla(343, 84%, 61%, 1);
         outline-offset: 3px;
     }
 }

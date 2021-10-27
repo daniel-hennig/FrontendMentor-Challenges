@@ -10,12 +10,18 @@ for(let i = 0; i < forms.length; i++) { // loop through both forms
     // input validation
     forms[i].addEventListener('input', (e) => {
         if(validateEmail(email[i].value) === false) {
+            email[i].setAttribute('aria-invalid', 'true');
+            email[i].setAttribute('aria-describedBy', `wrong-email${i+1}`); // + 1, because the actual value is starting at 0
+
             if(!errorContainer[i].classList.contains('error')) {
                 errorContainer[i].classList.add('error');
                 email[i].classList.add('--border-red');
                 forms[i].classList.add('--gap-3');
             }
         } else {
+            email[i].removeAttribute('aria-invalid');
+            email[i].removeAttribute('aria-describedBy');
+
             if(errorContainer[i].classList.contains('error')) {
                 errorContainer[i].classList.remove('error');
                 email[i].classList.remove('--border-red');
