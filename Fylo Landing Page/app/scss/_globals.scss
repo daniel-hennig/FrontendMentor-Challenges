@@ -1,3 +1,5 @@
+@use 'functions' as func;
+
 /* ====================== Reset ====================== */
 
 *, *::before, *::after {
@@ -52,6 +54,7 @@ h1, h2, h3, button, .author__name {
 // headings
 h1 {
     font-size: 1.5rem; // 24px
+    // font-size: func.rem(24); // 24px = 1.5rem
     line-height: 2.25rem; // 36px
 
     @include breakpoint-up(medium) {

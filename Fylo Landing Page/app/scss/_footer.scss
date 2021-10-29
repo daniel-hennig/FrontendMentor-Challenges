@@ -87,30 +87,86 @@ footer {
         }
     
         nav ul {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
+            display: grid;
+            row-gap: 16px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 32px 1fr 1fr 1fr;
+
+            li:first-of-type {
+                grid-row: 1;
+            }
+
+            li:nth-of-type(2) {
+                grid-row: 2;
+            }
+
+            li:nth-of-type(3) {
+                grid-row: 3;
+            }
+
+            li:nth-of-type(4) {
+                grid-row: 4;
+            }
+
+            li:nth-of-type(5) {
+                grid-row: 6;
+            }
+
+            li:nth-of-type(6) {
+                grid-row: 7;
+            }
+
+            li:last-of-type {
+                grid-row: 8;
+            }
 
             @include breakpoint-up(large) {
-                flex-direction: row;
-                gap: 7vw;
-            }    
+                grid-template-columns: 1fr 7vw 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+
+                li:first-of-type,
+                li:nth-of-type(2),
+                li:nth-of-type(3),
+                li:nth-of-type(4) {
+                    grid-column: 1;
+                }
+
+                li:nth-of-type(5),
+                li:nth-of-type(6),
+                li:last-of-type {
+                    grid-column: 3;
+                }
+
+                li:first-of-type {
+                    grid-row: 1;
+                }
+
+                li:nth-of-type(2) {
+                    grid-row: 2;
+                }
+
+                li:nth-of-type(3) {
+                    grid-row: 3;
+                }
+
+                li:nth-of-type(4) {
+                    grid-row: 4;
+                }
+
+                li:nth-of-type(5) {
+                    grid-row: 1;
+                }
+
+                li:nth-of-type(6) {
+                    grid-row: 2;
+                }
+
+                li:last-of-type {
+                    grid-row: 3;
+                }
+            }
 
             @include breakpoint-up(larger) {
-                flex-direction: row;
-                gap: 200px;
-            }    
-
-            .col-2 {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-            }
-    
-            .col-3 {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
+                grid-template-columns: 1fr 200px 1fr;
             }
         }
     
